@@ -3,10 +3,10 @@ package excel2rdd.settings;
 import java.util.List;
 
 public class ExcelWorkSheetSettings {
-    int workSheetIndex;
-    int startRow;
-    int endRow;
-    List<Integer> columnIndexList;
+    private int workSheetIndex;
+    private int startRow;
+    private int endRow;
+    private List<Integer> columnIndexList;
 
     public ExcelWorkSheetSettings() {
     }
@@ -65,9 +65,9 @@ public class ExcelWorkSheetSettings {
 
     @Override
     public int hashCode() {
-        int result = (int) (workSheetIndex ^ (workSheetIndex >>> 32));
-        result = 31 * result + (int) (startRow ^ (startRow >>> 32));
-        result = 31 * result + (int) (endRow ^ (endRow >>> 32));
+        int result = workSheetIndex;
+        result = 31 * result + startRow;
+        result = 31 * result + endRow;
         result = 31 * result + (columnIndexList != null ? columnIndexList.hashCode() : 0);
         return result;
     }

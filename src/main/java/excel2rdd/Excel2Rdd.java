@@ -19,8 +19,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.lang.Class.*;
-
 public class Excel2Rdd {
 
     public Excel2Rdd() {
@@ -142,5 +140,9 @@ public class Excel2Rdd {
             e.printStackTrace();
             return null;
         }
+    }
+
+    public static void main(String[] args) {
+
     }
 }
