@@ -37,7 +37,7 @@ public class Excel2Rdd {
             case BOOLEAN:
                 return String.valueOf(cell.getBooleanCellValue());
             case NUMERIC:
-                return String.valueOf(cell.getNumericCellValue()).replace(".0", "");
+                return String.valueOf(cell.getNumericCellValue());
         }
 
         return empty;
